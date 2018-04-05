@@ -6,7 +6,7 @@ if SETTINGS[:column_view]
       :virtual_path => "hosts/_list",
       :name => "title_#{k}",
       :insert_after => "th:contains('#{after}')",
-      :text => "\n    <th class=\"hidden-tablet hidden-phone\" width=\"#{width}%\"><%= fcv_title '#{k}' %></th>"
+      :text => "\n    <th class=\"hidden-tablet hidden-phone\" width=\"#{width}\"><%= fcv_title '#{k}' %></th>"
     )
   end
 end
